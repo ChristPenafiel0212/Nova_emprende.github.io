@@ -1,0 +1,234 @@
+body {
+    font-family: Georgia, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+
+header {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(29, 0, 51, 0.7)), url('galaxia.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto; 
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    width: 80%;
+    max-width: 1200px; 
+    margin: 20px auto;
+    overflow: auto;
+}
+
+
+.content {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.section-square {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.section-square .image-position {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 15px;
+}
+
+
+.ad-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.ad-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.ad-group:nth-of-type(2) {
+    margin-bottom: 0; 
+}
+
+.ad-group-3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.ad-group-3 a {
+    display: block;
+    flex-basis: calc(33.33% - 10px); 
+}
+
+
+.ad-group-4 a {
+    display: block;
+    flex-basis: calc(25% - 10px); 
+}
+
+
+.ad-image {
+    width: 100%; 
+    height: auto; 
+    display: block;
+    transition: transform 0.3s ease; 
+}
+
+.ad-container a:hover .ad-image {
+    transform: scale(1.1); 
+}
+
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links li a {
+    color: #004090;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.social-links li a .social-icon {
+    width: 24px; 
+    height: 24px;
+    margin-right: 8px; 
+}
+
+
+
+.producto {
+    margin-bottom: 20px;
+}
+
+.producto img {
+    width: 80%; 
+    max-width: 250px; 
+    height: auto; 
+}
+
+.producto img:hover {
+    transform: scale(1.1); 
+    opacity: 0.8; 
+}
+
+
+footer {
+    background-color: #004090;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(29, 0, 51, 0.7)), url('galaxia.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+@keyframes cambiarTamano {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8); 
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.logo {
+    animation: cambiarTamano 2s ease-in-out infinite;
+}
+
+
+@media screen and (max-width: 768px) {
+    .ad-group-3 a, .ad-group-4 a {
+        flex-basis: 100%; 
+    }
+}
+
+
+.content img:not(.producto img) {
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.content img:not(.producto img):hover {
+    transform: scale(1.1); 
+    opacity: 0.8; 
+}
+
+nav ul li a {
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+nav ul li a:hover {
+    transform: scale(1.1); 
+    opacity: 0.8; 
+}
+
